@@ -41,6 +41,16 @@ module.exports = {
         ],
         dsl: 'less'
     },
+    glamira: {
+        area: 'frontend',
+        name: 'Opentechiz/glamira',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l'
+        ],
+        dsl: 'less'
+    },
     backend: {
         area: 'adminhtml',
         name: 'Magento/backend',
@@ -52,3 +62,4 @@ module.exports = {
         dsl: 'less'
     }
 };
+
