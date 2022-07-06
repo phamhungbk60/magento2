@@ -1,25 +1,37 @@
-.block-search .block-content {
-    .form.minisearch {
-        #search {
-            background-color: rgb(108, 167, 216);
-        }
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .page-header {
+        background-color: @header_background-color;
     }
 }
 
-header .panel.wrapper {
-    background-color: black;
+.block-search .block-content {
+    .form.minisearch {
+        #search {
+            // background-color: rgb(108, 167, 216);
+            font-family: 'LibreFranklin';
+        }
+    }
+
+    header .panel.wrapper {
+        // background-color: black;
+    }
+
+    header .header.content {
+        // background-color: rgb(102, 172, 85);
+    }
+
+    .page-header {
+        border: 0;
+        margin-bottom: 0;
+        // background-color: black;
+    }
+
+    .page-footer {
+        // background: rgb(0, 0, 0);
+    }
 }
 
-header .header.content {
-    background-color: rgb(102, 172, 85);
-}
-
-.page-header {
-    border: 0;
-    margin-bottom: 0;
-    background-color: black;
-}
-
-.page-footer {
-    background: rgb(0, 0, 0);
-}
