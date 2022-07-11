@@ -8,8 +8,10 @@
                 </argument>
             </action>
         </referenceBlock>
+
         <referenceContainer name="header.panel">
-            <block class="Magento\Framework\View\Element\Template" template="Magento_Theme::test.phtml" name="test" before="-" />
+            <block class="Magento\Framework\View\Element\Template" template="Magento_Theme::top-header.phtml" name="top-header" before="-" />
         </referenceContainer>
+
     </body>
 </page>
