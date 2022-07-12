@@ -13,5 +13,9 @@
             <block class="Magento\Framework\View\Element\Template" template="Magento_Theme::top-header.phtml" name="top-header" before="-" />
         </referenceContainer>
 
+        <referenceBlock name="my-account-link" remove="true"/>
+        <referenceBlock name="register-link" remove="true"/>
+
+
     </body>
 </page>

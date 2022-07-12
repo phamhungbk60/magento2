@@ -39,7 +39,6 @@
     .top-header {
         padding-right: 10px;
         padding-left: 10px;
-        font-size: 1rem;
     }
 
     .page-footer {
@@ -53,42 +52,21 @@
 
 }
 
-//
-//  Mobile
-//  _____________________________________________
-
-.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
-    .block-search .control {
-        border-top: none;
-    }
-
-    .page-header .header.panel {
-        padding-bottom: 10px;
-        display: -webkit-box;
-        padding-top: 10px;
-        font-size: 1rem;
-    }
-}
 
 //
 //  Desktop
 //  _____________________________________________
 
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
-    .navigation {
-        font-weight: 400;
-    }
-
-    .navigation ul {
-        padding: 0 8px;
-        justify-content: center;
-        display: flex;
-    }
-
-    .page-header .header.panel {
-        padding-bottom: 10px;
-        display: -webkit-box;
-        padding-top: 10px;
-        font-size: 1rem;
+    .home-customise {
+        display:
     }
 }
