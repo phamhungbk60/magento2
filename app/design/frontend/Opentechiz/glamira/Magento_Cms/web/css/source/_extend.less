@@ -8,65 +8,214 @@
 //  _____________________________________________
 
 & when (@media-common = true) {
-    .page-main {
-        padding-right: 10px;
-        padding-left: 10px;
+    // Home customise (p1)
+
+    .home-customise {
+        display: flex;
     }
 
-    .page-header {
-        background-color: @header_background-color;
+    .home-customise .icon-top .img-icon {
+        height: 35px;
+        width: auto;
     }
 
-    .header.content {
-        padding-right: 10px;
-        padding-left: 10px;
+    .icon-custom {
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
-    .page-header .header.panel {
-        padding-right: 0px;
-        padding-left: 0px;
+    .icon-bottom .title {
+        font-weight: bold;
+        text-transform: uppercase;
     }
 
+    // Special product (p2)
 
-    .header.panel > .header.links > li {
-        &.welcome,
-        a {
-            color: @color-white;
-        }
+    .img-product {
+        position: relative;
+        width: 100%;
+    }
+
+    .product-content {
+        position: absolute;
+        z-index: 1;
+        width: 84%;
+        bottom: 4%;
+        padding: 0 8%;
+    }
+
+    .product-content > p {
+        text-transform: uppercase;
+        padding: 0;
+        width: auto;
+        display: inline-block;
+        color: black;
+        text-align: center;
+        width: 100%;
+    }
+
+    .data-product {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .data-product-detail {
+        height: 45px;
+        line-height: 22px;
+        margin-bottom: 1px;
+        background-color: transparent;
+        text-align: center;
+        position: relative;
+        border: 1px solid #414042;
+        width: 100%;
+        margin-top: 5%;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .data-product-detail > p {
+        margin: 0px;
+    }
+
+    // Wrapper box collection (p3)
+
+    .wrapper-box-collection {
 
     }
 
-    .top-header {
-        padding-right: 10px;
-        padding-left: 10px;
+    .title-collection {
+        font-size: 1.7rem;
+        margin: 15px;
+        display: block;
+        text-align: center;
     }
 
-    .page-footer {
-        background-color: @header_background-color;
-    }
-
-    .footer.content {
-        padding-right: 10px;
-        padding-left: 10px;
+    .img-colection {
+        display: block;
     }
 
 }
 
-
-//
-//  Desktop
-//  _____________________________________________
-
-.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
-
-}
 
 //
 //  Mobile
 //  _____________________________________________
 
-.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+    // Home customise (p1)
+
     .home-customise {
-        display:
+        display: flex;
+        margin-top: 0;
+        justify-content: center;
+        align-content: center;
+        padding: 10px;
     }
+
+    .home-customise > div {
+        margin-bottom: 3px;
+    }
+
+    .home-customise > div:nth-child(2) {
+        display: none;
+    }
+
+    .home-customise .icon-top .img-icon {
+        display: inline-block;
+    }
+
+    .icon-top {
+        margin-bottom: 3px;
+    }
+
+    .icon-bottom {
+
+    }
+
+    .icon-bottom .title {
+        font-size: 10px;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    // Special product (p2)
+
+    // Wrapper box collection (p3)
+
+    .wrapper-box-collection {
+
+    }
+
+    .title-collection {
+
+    }
+
+    .img-colection {
+
+    }
+
+
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    // Home customise (p1)
+
+    .home-customise {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-size: 1.1rem;
+        margin-top: 14px;
+        margin-bottom: 20px;
+    }
+
+    .home-customise > div {
+        width: 20%;
+        float: left;
+    }
+
+    .icon-custom {
+        display: -webkit-box;
+    }
+
+    .icon-top {
+        margin-right: 6px;
+    }
+
+    .icon-bottom {
+        text-align: initial;
+    }
+
+    .icon-bottom .title {
+        font-size: 12px;
+    }
+
+    .hide-on-mobile {
+        font-size: 11px;
+    }
+
+    // Specital product (p2)
+
+    .special-product {
+        display: flex;
+    }
+
+    // Wrapper box collection (p3)
+
+
 }
