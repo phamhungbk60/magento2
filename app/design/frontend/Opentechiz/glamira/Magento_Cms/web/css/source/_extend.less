@@ -8,6 +8,7 @@
 //  _____________________________________________
 
 & when (@media-common = true) {
+
     // Home customise (p1)
 
     .home-customise {
@@ -38,6 +39,7 @@
     .img-product {
         position: relative;
         width: 100%;
+        margin: 0 10px;
     }
 
     .product-content {
@@ -46,22 +48,54 @@
         width: 84%;
         bottom: 4%;
         padding: 0 8%;
+        > p {
+            text-transform: uppercase;
+            padding: 0;
+            width: auto;
+            display: inline-block;
+            color: black;
+            text-align: center;
+            width: 100%;
+            font-weight: bold;
+        }
     }
 
-    .product-content > p {
-        text-transform: uppercase;
-        padding: 0;
-        width: auto;
-        display: inline-block;
-        color: black;
-        text-align: center;
-        width: 100%;
-    }
+    // .product-content > p::after {
+    //     position: absolute;
+    //     right: 170px;
+    //     top: 3px;
+    //     background-repeat: no-repeat;
+    //     width: 15px;
+    //     height: 12px;
+    //     display: inline-block;
+    //     vertical-align: middle;
+    //     content: " ";
+    //     background-size: 75%;
+    //     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALBAMAAABbgmoVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAFVBMVEUAAABCQEJAQEBBQEFAQEBAQEL///+29W7xAAAABnRSTlMAryC/QK9E8ei5AAAAAWJLR0QGYWa4fQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+UJHAcQGi9tV2kAAAApSURBVAjXYxBiYFRgYGBQVmAyAlJAQhkL15mBxQDOg8ihcBiCGFiBHACyQATaFvnVOAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMS0wOS0yOFQwNDoxNjoyNiswMzowMF2xyN8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjEtMDktMjhUMDQ6MTY6MjYrMDM6MDAs7HBjAAAAAElFTkSuQmCC);
+    // }
 
     .data-product {
         display: flex;
         flex-direction: column;
         padding: 0;
+    }
+
+    .data-product li::after {
+        color: #767676;
+        margin-left: 10px;
+        right: 5%;
+        top: 50%;
+        margin-top: -5px;
+        content: "";
+        width: auto;
+        height: auto;
+        position: absolute;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        border-style: solid;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 3px;
     }
 
     .data-product-detail {
@@ -82,6 +116,7 @@
 
     .data-product-detail > p {
         margin: 0px;
+        color: #414042;
     }
 
     // Wrapper box collection (p3)
@@ -90,15 +125,178 @@
 
     }
 
-    .title-collection {
+    .straight-line .p-text {
         font-size: 1.7rem;
         margin: 15px;
         display: block;
         text-align: center;
+        position: relative;
     }
 
-    .img-colection {
+    // .straight-line ::after {
+    //     content: "";
+    //     width: 60px;
+    //     height: 1px;
+    //     background-color: #414042;
+    //     position: absolute;
+    //     bottom: -5px;
+    //     left: 0;
+    //     right: 0;
+    //     text-transform: uppercase;
+    //     margin: auto;
+    //     display: inline-block;
+    // }
+
+    .img-colection .img-reponsive{
         display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    // Celebrity Collabs (p4)
+    .celebrity-collabs {
+
+    }
+
+    .celebrity-collabs .flex {
+
+    }
+
+    // Explode Jewellery (p5)
+
+    .explore-jewellery-content {
+        padding: 0;
+    }
+
+    .explore-jewellery-content > li {
+        display: flex;
+        justify-content: space-around;
+        > img {
+            width: 30%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        > p {
+            width: 70%;
+            color: #414042;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+
+        // > p::before {
+        //     width: 1px;
+        //     height: 68px;
+        //     content: "";
+        //     display: inline-block;
+        //     background-color: #dedede;
+        //     left: 0;
+        //     top: 50%;
+        // }
+    }
+
+    // Video
+
+    .video {
+        text-align: center;
+    }
+
+    // Home Reviews (p6)
+
+    .home-reviews {
+
+    }
+
+    .home-reviews-title {
+
+    }
+
+    .home-reviews-content {
+
+    }
+
+    .home-reviews-item {
+        padding: 0;
+        text-align: center;
+        > li {
+            list-style-type: none;
+        }
+    }
+
+    // Influencers Pick(p7)
+    .influencers-pick {
+
+    }
+    // Explore Home(p8)
+    .explore-home {
+        padding: 0;
+    }
+
+    .explore-title {
+
+    }
+
+    .explode-content {
+        list-style-type: none;
+        padding: 0;
+    }
+
+
+    .explode-content > li {
+        display: flex;
+        justify-content: space-around;
+        > img {
+            width: 30%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        > p {
+            width: 70%;
+            color: #414042;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+    }
+
+    // Wrapper Tab (p9)
+
+    .nav-tab {
+        padding: 0;
+    }
+
+    .tab-title {
+        list-style-type: none;
+    }
+
+    .tab-title > a {
+        font-size: 1.2rem;
+        padding: 23px 0;
+        display: block;
+        position: relative;
+        text-transform: uppercase;
+        color: #333;
+        text-align: center;
+    }
+
+    .tab-title > a:nth-child(1) {
+        // color: #b00024;
+    }
+
+    .tab-content h1 {
+        font-size: 1.7rem;
+        margin-bottom: 25px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .tab-content p {
+        color: #767676;
+        font-family: 'futuralightbt';
+        font-size: 1.4rem;
+        line-height: 25px;
     }
 
 }
@@ -118,10 +316,10 @@
         justify-content: center;
         align-content: center;
         padding: 10px;
-    }
+        > div {
+            margin-bottom: 3px;
 
-    .home-customise > div {
-        margin-bottom: 3px;
+        }
     }
 
     .home-customise > div:nth-child(2) {
@@ -164,6 +362,82 @@
 
     }
 
+    // Celebrity Collabs (p4)
+    .celebrity-collabs {
+
+    }
+
+    .celebrity-collabs .flex {
+
+    }
+
+    // Explore Jewellery (p5)
+
+    .explore-jewellery {
+
+    }
+
+    .explore-jewellery-content > li {
+        justify-content: space-around;
+    }
+
+    // Home Reviews (p6)
+    .home-reviews {
+
+    }
+
+    .home-reviews-title {
+
+    }
+
+    .home-reviews-content {
+
+    }
+
+    .home-reviews-item li p {
+
+        font-size: 1.3rem;
+        color: #414042;
+
+        // > p:nth-child(1){
+        //     font-size: 1.3rem;
+        //     color: #414042;
+        // }
+        // > p:nth-child(2){
+
+        // }
+        // > p:nth-child(3){
+
+        // }
+    }
+
+    .home-reviews-item li:nth-child(n+3) {
+        display: none;
+    }
+
+    // Influencers Pick(p7)
+    .influencers-pick > div div:nth-child(1){
+        display: none;
+    }
+    .influencers-pick > div div:nth-child(3){
+        display: none;
+    }
+    .influencers-pick > div div:nth-child(4){
+        display: none;
+    }
+
+    // Explore Home(p8)
+
+    // Wrapper Tab (p9)
+
+    .tab-title {
+        display: block;
+        margin-right: 1.22%;
+        margin-bottom: 8px;
+        border: 1px solid #d7d7d7;
+    }
+
+
 
 }
 
@@ -182,11 +456,9 @@
         font-size: 1.1rem;
         margin-top: 14px;
         margin-bottom: 20px;
-    }
-
-    .home-customise > div {
-        width: 20%;
-        float: left;
+        > div {
+            width: 20%;
+        }
     }
 
     .icon-custom {
@@ -216,6 +488,95 @@
     }
 
     // Wrapper box collection (p3)
+
+    // Celebrity Collabs (p4)
+
+    .celebrity-collabs {
+
+    }
+
+    .celebrity-collabs .flex {
+        display: flex;
+        flex-wrap: wrap;
+        > a {
+            width: 48%;
+            margin: 1%;
+        }
+    }
+
+    // Explore Jewellery (p5)
+
+    .explore-jewellery-content {
+        display: flex;
+        flex-wrap: wrap;
+        > li {
+            width: 48%;
+            margin: 1%;
+        }
+    }
+
+    // Home Review (p6)
+    .home-reviews {
+
+    }
+
+    .home-reviews-title {
+
+    }
+
+    .home-reviews-content {
+
+    }
+
+    .home-reviews-item {
+        display: flex;
+        > li {
+            // display: flex;
+            > img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    // Influencers Pick(p7)
+
+    .influencers-pick {
+        > div {
+            display: flex;
+            > img {
+                display: flex;
+                width: 25%;
+            }
+        }
+
+    }
+
+    // Explore Home(p8)
+
+    .explode-content {
+        display: flex;
+        padding: 0;
+    }
+
+    // Wrapper Tab (p9)
+
+    .wrapper-tab {
+        border: 1px solid #d7d7d7;
+
+    }
+
+    .nav-tab {
+        display: flex;
+        margin-bottom: 8px;
+        position: relative;
+    }
+    .tab-title {
+        margin: 3%;
+        width: 20%;
+        list-style-type: none;
+        border: 1px solid #d7d7d7;
+    }
 
 
 }
