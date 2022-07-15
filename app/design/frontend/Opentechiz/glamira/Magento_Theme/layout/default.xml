@@ -13,9 +13,23 @@
             <block class="Magento\Framework\View\Element\Template" template="Magento_Theme::top-header.phtml" name="top-header" before="-" />
         </referenceContainer>
 
+        <referenceContainer name="header-wrapper">
+            <block class="Magento\Framework\View\Element\Template" template="Magento_Theme::bottom-header.phtml" name="bottom-header" before="-" />
+        </referenceContainer>
+
+
+
+
+
         <referenceBlock name="my-account-link" remove="true"/>
         <referenceBlock name="register-link" remove="true"/>
+        <referenceBlock name="header" remove="true"/>
+        <referenceBlock name="advanced-search-link" remove="true"/>
 
+
+
+
+        <move element="minicart" destination="top.links" after="header"/>
 
     </body>
 </page>
