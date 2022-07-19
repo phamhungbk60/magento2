@@ -9,21 +9,14 @@
 //  _____________________________________________
 
 & when (@media-common = true) {
-
-    .filter-options .filter-options-title {
-        color: black;
-        font-size: 1.3rem;
-        text-transform: uppercase;
+    .swatch-attribute.size .swatch-option {
+        background-color: black;
     }
 
-    .filter-options .filter-options-content .item a {
-        color: #414042;
-        font-size: 1.3rem;
+    .swatch-attribute-options {
+        // display: flex;
+        // flex-direction: column;
         margin-left: 20px;
-    }
-
-    .block-subtitle .filter-subtitle {
-        display: none;
     }
 
 }
@@ -33,9 +26,6 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
-    .page-with-filter .columns .sidebar-main .block .filter{
-        display: none;
-    }
 
 }
 
