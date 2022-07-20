@@ -7,14 +7,12 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-
-        <referenceContainer name="content">
-            <block class="Magento\Cms\Block\Block" name="wrapper_top_banner" before="-">
+        <referenceContainer name="columns.top">
+             <block class="Magento\Cms\Block\Block" name="wrapper_top_banner" before="-">
                 <arguments>
                     <argument name="block_id" xsi:type="string">wrapper_top_banner</argument>
                 </arguments>
             </block>
         </referenceContainer>
-
     </body>
 </page>
