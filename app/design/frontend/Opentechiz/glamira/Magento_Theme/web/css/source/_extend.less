@@ -9,6 +9,11 @@
 
 & when (@media-common = true) {
 
+    .li.item.product.product-item {
+        border: 2px solid red;
+        text-align: center;
+    }
+
     .page-title-wrapper {
         display: none;
     }
@@ -128,6 +133,14 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    .page-main {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+
     .navigation {
         font-weight: 400;
     }

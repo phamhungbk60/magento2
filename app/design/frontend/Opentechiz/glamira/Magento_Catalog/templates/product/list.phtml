@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 /**
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
@@ -73,8 +73,11 @@ $_helper = $block->getData('outputHelper');
                                 <?=/* @noEscape */ $_helper->productAttribute($_product, $_product->getName(), 'name')?>
                             </a>
                         </strong>
-                        <!-- <strong class="product name product-item-name">
+                        <strong class="product name product-item-name">
                             <?= $_product->getStoneInfo() ?>
+                        </strong>
+                        <!-- <strong class="product name product-item-name">
+                            <?= $_product->getCarat() ?>
                         </strong> -->
                         <?= $block->getReviewsSummaryHtml($_product, $templateType) ?>
                         <?= /* @noEscape */ $block->getProductPrice($_product) ?>
@@ -173,4 +176,4 @@ $_helper = $block->getData('outputHelper');
         }
     }
     </script>
-<?php endif; ?> -->
+<?php endif; ?>
