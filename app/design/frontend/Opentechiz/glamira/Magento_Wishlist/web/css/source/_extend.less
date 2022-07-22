@@ -11,16 +11,18 @@
 & when (@media-common = true) {
 
     #authenticationPopup + .toolbar.toolbar-products {
+        display: flex;
+        align-items: center;
         background-color: #1c1a26;
         position: absolute;
         top: 0px;
         left: 0px;
         width: 100%;
-        padding: 2px 0px;
     }
 
     .toolbar.toolbar-products .modes {
         padding-left: 5px;
+        margin-right: auto;
     }
 
     strong.modes-mode.active.mode-grid, a#mode-list {
@@ -40,21 +42,50 @@
     }
 
     label.sorter-label {
-        display: none;
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+    .toolbar-products .pages {
+        display: block;
+    }
+
+    .sorter.sorter-action {
+        position: none;
     }
 
     .toolbar-sorter.sorter {
-        padding: 4px;
+        padding: 4px 20px 4px 0px;
+    }
+
+    a.action.sorter-action.sort-asc {
+        display: none;
     }
 
     a.action.sorter-action.sort-desc {
         display: none;
     }
 
+    select#sorter {
+        background-color: #1c1a26;
+        color: #fff;
+        border: none;
+        font-size: 1.2rem;
+        width: 50%;
+    }
+
+    .pages .items.pages-items .item.current span:nth-child(2) {
+        color: #fff;
+    }
+
     .breadcrumbs .items li.item.home > a {
         color: #909090;
         font-family: 'Open Sans';
         font-size: 1rem;
+    }
+
+    .pages .action {
+        border: none;
     }
 
     .breadcrumbs .items .item.category38 strong {
@@ -76,6 +107,30 @@
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
 
+    #authenticationPopup + .toolbar.toolbar-products {
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    .breadcrumbs .items {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .page-main {
+        margin-top: 20px;
+        > img {
+            display: none;
+        }
+    }
+
+    .toolbar-products {
+        padding: 0;
+    }
+
+    .sidebar.sidebar-main {
+        display: none;
+    }
 }
 
 //
@@ -83,6 +138,11 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    #authenticationPopup + .toolbar.toolbar-products {
+        padding: 6px 13px 7px 20px;
+    }
+
     .modes-mode:before {
         color: #fff;
     }

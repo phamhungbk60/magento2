@@ -14,10 +14,6 @@
         display: none;
     }
 
-    .catalog-category-view .columns {
-        padding-top: 100px;
-    }
-
     li.item.product.product-item {
         // border: 2px solid red;
         text-align: center;
@@ -72,7 +68,6 @@
     }
 
     .catalog-category-view .columns {
-        padding-top: 100px;
         max-width: 1280px;
         margin: 0 auto;
     }
@@ -88,6 +83,10 @@
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
     .page-with-filter .columns .sidebar-main .block .filter{
         display: none;
+    }
+
+    .catalog-category-view .columns {
+        padding-top: 0;
     }
 
 }

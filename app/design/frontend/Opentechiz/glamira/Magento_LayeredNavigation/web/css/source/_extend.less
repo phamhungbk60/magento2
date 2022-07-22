@@ -71,6 +71,10 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .sidebar.sidebar-main {
+        // display: none;
+    }
+
     .page-with-filter .columns .sidebar-main .block .filter{
         display: none;
     }

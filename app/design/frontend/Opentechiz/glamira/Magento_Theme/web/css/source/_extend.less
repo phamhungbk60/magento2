@@ -9,6 +9,12 @@
 
 & when (@media-common = true) {
 
+
+    .header.panel > .header.links > li a {
+        font-size: 1.2rem;
+        font-family: 'LibreFranklin-Medium';
+    }
+
     .li.item.product.product-item {
         border: 2px solid red;
         text-align: center;
@@ -31,7 +37,12 @@
     .header.content {
         padding: 13px 90px 10px 51px;
         display: flex;
+        align-items: center;
         justify-content: space-between;
+        > .block-search .control {
+            margin: 0;
+        }
+
         > .logo {
             margin: 0px;
             > img {
@@ -50,7 +61,7 @@
 
     .page-header .header.panel {
         padding: 0px;
-        display: -webkit-box;
+        // display: -webkit-box;
         font-size: 1rem;
     }
 
@@ -86,7 +97,8 @@
     }
 
     .bottom-header a {
-        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1.2rem;
     }
 
     // a:hover {
@@ -102,6 +114,10 @@
         padding-left: 10px;
     }
 
+    .breadcrumbs {
+        // max-width: 1320px;
+    }
+
 }
 
 //
@@ -109,7 +125,20 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+    .page-header .header.panel {
+        display: flex;
+        justify-content: center;
+        > .top-header {
+            > a {
+                font-size: 1rem;
+                color: #a4a3a8;
+            }
+        }
+    }
+
     .block-search .control {
+        padding: 0;
         border-top: none;
     }
 
@@ -134,6 +163,30 @@
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
 
+    .page-header .panel.wrapper {
+        border-bottom: 1px solid #949494;
+    }
+
+    .header.content {
+        // max-width: 1620px;
+    }
+
+    .page-header .header.panel {
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        align-items: center;
+        > .header.links {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .top-header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .page-main {
         width: 100%;
         max-width: none;
@@ -151,5 +204,17 @@
         display: flex;
     }
 
+    .header.content {
+        padding: 17px 0px 17px 0px;
+    }
+
+    .block-search.control {
+        padding: 0;
+    }
+
+    .block-search .control {
+        padding: 0;
+        border-top: none;
+    }
 
 }
